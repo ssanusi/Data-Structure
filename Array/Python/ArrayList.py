@@ -8,8 +8,18 @@ class ArrayList(object):
     def __len__(self):
         return self.count
 
-    def __str__(self, parameter_list):
-        pass
+    def __repr__(self):
+        result = "["
+        for index, value in enumerate( self.list):
+            if value != None and value != "":
+                if index == 0:
+                    result += str(value)
+                else:
+                    result += ", " + str(value)
+
+        result += " ]"
+        return result
+
 
     def make_array(self, new_capacity):
         return [None] * new_capacity
@@ -51,6 +61,4 @@ class ArrayList(object):
 
         return False
 
-    def print(self):
-        for item in self.list:
-            print(item)
+

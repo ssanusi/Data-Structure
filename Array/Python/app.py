@@ -8,7 +8,7 @@ arr.append(3)
 print(len(arr))
 arr.remove_at(1)
 print(len(arr))
-arr.print()
+print(arr)
 
 
 

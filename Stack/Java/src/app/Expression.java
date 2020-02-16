@@ -1,6 +1,5 @@
 package app;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
@@ -10,7 +9,6 @@ public class Expression {
 
     private final List<Character> leftBrackets = Arrays.asList('(','<','[','{');
     private final List<Character> rightBrackets = Arrays.asList(')','>',']','}');
-
     public boolean isBalance(String input){
       Stack<Character> stack = new Stack<>();
       for(char ch: input.toCharArray()){
@@ -27,7 +25,7 @@ public class Expression {
      return stack.empty();
   }
 
-  private boolean isLeftBracket(char ch){
+    private boolean isLeftBracket(char ch){
       return leftBrackets.contains(ch);
   }
 

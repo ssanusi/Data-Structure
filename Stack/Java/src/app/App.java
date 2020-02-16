@@ -11,7 +11,7 @@ public class App {
 
         String strExp = "(1 + 2)";
         Expression exp = new Expression();
-        var resultExp = exp.isBalance(strExp);
+        Boolean resultExp = exp.isBalance(strExp);
         System.out.println(resultExp);
 
 

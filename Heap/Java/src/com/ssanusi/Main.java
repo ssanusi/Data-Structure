@@ -22,5 +22,10 @@ public class Main {
           numbers[i] = heap2.remove();
       }
         System.out.println(Arrays.toString(numbers));
+
+      //Max Heap
+      MaxHeap.heapify(numbers);
+      System.out.println(Arrays.toString(numbers));
+      System.out.println(MaxHeap.getKthLargest(numbers, 7));
     }
 }
